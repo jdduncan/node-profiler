@@ -9,7 +9,9 @@
       'target_name': 'd8compat',
       'sources': ['d8-posix.cc']
     },
-
+  
+    # TODO: target for mac-nm
+  
     {
       'target_name': 'nprof',
       'conditions': [

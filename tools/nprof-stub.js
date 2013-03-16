@@ -25,4 +25,11 @@ var readline = (function() {
 
 var arguments = process.argv.slice(2);
 
+if (process.platform === 'darwin') {
+    arguments.push('--mac');
+    arguments.push('--nm=node-mac-nm');
+}
+
 var os = require("d8compat");
+
+
