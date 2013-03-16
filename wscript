@@ -10,6 +10,9 @@ def configure(ctx):
 	ctx.check_tool('node_addon')
 
 def build(ctx):
-	t = ctx.new_task_gen('cxx', 'shlib', 'node_addon')
-	t.target = 'profiler'
-	t.source = 'profiler.cc'
+	t1 = ctx.new_task_gen('cxx', 'shlib', 'node_addon')
+	t1.target = 'profiler'
+	t1.source = 'profiler.cc'  
+	t2 = ctx.new_task_gen('cxx', 'shlib', 'node_addon')
+	t2.target = 'd8compat'
+	t2.source = 'd8-posix.cc'

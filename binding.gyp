@@ -4,6 +4,11 @@
       'target_name': 'profiler',
       'sources': ['profiler.cc']
     },
+    
+    {
+      'target_name': 'd8compat',
+      'sources': ['d8-posix.cc']
+    },
 
     {
       'target_name': 'nprof',

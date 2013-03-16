@@ -24,3 +24,5 @@ var readline = (function() {
 })();
 
 var arguments = process.argv.slice(2);
+
+var os = require("d8compat");
